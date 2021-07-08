@@ -9,7 +9,6 @@ public static void main(String[] args) {
 	LineCalculation calculateLength = new LineCalculation(pointX2, pointX1, pointY2, pointY1);
 	calculateLength.lengthOfLine();
 	calculateLength.equalLength();
-	
-	
+	calculateLength.compareLength();
 }
 }	
