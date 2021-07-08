@@ -8,6 +8,8 @@ public class LineCalculation {
 	public double pointY2;
 	public double pointY1;
 	public double lineLength;
+	public double newLineLength;
+
 	
 	public LineCalculation(double pointX2, double pointX1, double pointY2, double pointY1) {
 		super();
@@ -47,7 +49,7 @@ public class LineCalculation {
 		Scanner scanValueY2 = new Scanner(System.in);
 		pointY2 = scanValueY2.nextDouble();
 		
-		double newLineLength=Math.sqrt(
+		 double newLineLength=Math.sqrt(
 				(Math.pow((pointX2-pointX1), 2))
 				+
 				(Math.pow(pointY2-pointY1, 2))
@@ -65,5 +67,8 @@ public class LineCalculation {
 			System.out.println("both line length are different");
 		}
 		
+		
 	}
+	
+	
 }

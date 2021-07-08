@@ -10,5 +10,6 @@ public static void main(String[] args) {
 	calculateLength.lengthOfLine();
 	calculateLength.equalLength();
 	
+	
 }
 }	
