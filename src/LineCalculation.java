@@ -31,11 +31,30 @@ public class LineCalculation {
 	
 	public void equalLength() {
 		
-		System.out.print("Enter line length- ");
-		Scanner scanValue = new Scanner(System.in);
-		double userInput = scanValue.nextDouble();
-
-		String getUserInput=userInput+"";
+		System.out.print("Enter line x1 cordinate- ");
+		Scanner scanValueX1 = new Scanner(System.in);
+		pointX1 = scanValueX1.nextDouble();
+		
+		System.out.print("Enter line x2 cordinate- ");
+		Scanner scanValueX2 = new Scanner(System.in);
+		pointX2 = scanValueX2.nextDouble();
+		
+		System.out.print("Enter line y1 cordinate- ");
+		Scanner scanValueY1 = new Scanner(System.in);
+		pointY1 = scanValueY1.nextDouble();
+		
+		System.out.print("Enter line y2 cordinate- ");
+		Scanner scanValueY2 = new Scanner(System.in);
+		pointY2 = scanValueY2.nextDouble();
+		
+		double newLineLength=Math.sqrt(
+				(Math.pow((pointX2-pointX1), 2))
+				+
+				(Math.pow(pointY2-pointY1, 2))
+				);
+		
+		
+		String getUserInput=newLineLength+"";
 		String getLength=lineLength+"";
 		
 		boolean checkEquality=getUserInput.equals(getLength);
