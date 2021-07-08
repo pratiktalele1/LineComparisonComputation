@@ -7,6 +7,7 @@ public static void main(String[] args) {
 	double pointY2=1;
 	
 	LineCalculation calculateLength = new LineCalculation(pointX2, pointX1, pointY2, pointY1);
-	calculateLength.LengthOfLine();
+	calculateLength.lengthOfLine();
+	calculateLength.equalLength();
 }
 }	
